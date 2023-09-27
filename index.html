@@ -2,98 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Baxi Mama</title>
-    <link rel="icon" type="image/x-icon" href="images/logo.png" />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <script type="module" src="app.js"></script> -->
   </head>
-
-  <body onload="setLanguage('en')">
-    <header>
-      <div class="flex justify-around items-center w-full">
-        <img src="images/logo.png" alt="Baxi Mama Logo" />
-        <div>
-          <h1 lang-tag="title"></h1>
-          <nav>
-            <ul>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#menu">Menu</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div>
-          <button class="btn btn-blue" onclick="setLanguage('en')">
-            English
-          </button>
-          <button class="btn btn-blue" onclick="setLanguage('br')">
-            Brasileiro
-          </button>
-          <button class="btn btn-blue" onclick="setLanguage('tw')">
-            Zhōngwén
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <section class="hero">
-      <div class="container">
-        <h2>Delicious Brazilian Cheese Bread</h2>
-        <p>
-          Try our mouthwatering cheese bread made with authentic Brazilian
-          ingredients.
-        </p>
-        <a href="#menu" class="btn">View Menu</a>
-      </div>
-    </section>
-
-    <section id="menu" class="menu">
-      <div class="container">
-        <h2>Our Menu</h2>
-        <div class="menu-items">
-          <!-- Menu items will be added dynamically using JavaScript -->
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="about">
-      <div class="container">
-        <h2>About Us</h2>
-        <p>
-          Welcome to our Brazilian Cheese Bread Shop! We are passionate about
-          bringing the authentic taste of Brazil to your table. Our cheese bread
-          is made from the finest ingredients, including tapioca flour, cheese,
-          and love.
-        </p>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or inquiries, feel free to contact us.</p>
-        <form id="contactForm" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            rows="4"
-            required
-          ></textarea>
-          <button type="submit" class="btn">Send Message</button>
-        </form>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container">
-        <p>&copy; 2023 Baxi Mama. All rights reserved.</p>
-      </div>
-    </footer>
-
-    <script src="app.js"></script>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

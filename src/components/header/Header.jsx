@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import logo from "../../assets/logo.png";
 
-export default function Header() {
+export const Header = () => {
   const { t } = useTranslation();
 
   return (
@@ -14,4 +14,4 @@ export default function Header() {
       <h1 className="text-3xl font-bold text-white">{t("title")}</h1>
     </header>
   );
-}
+};

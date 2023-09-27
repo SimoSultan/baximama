@@ -1,6 +1,6 @@
 import { Card } from "../core";
 
-export default function Order() {
+export const Order = () => {
   return (
     <Card>
       <h1>Order</h1>
@@ -15,4 +15,4 @@ export default function Order() {
       </p>
     </Card>
   );
-}
+};

@@ -2,8 +2,7 @@ import LanguageSelector from "../LanguageSelector";
 import logo from "../../assets/logo.png";
 import { SITE_PADDING } from "../../utils/contants";
 
-export default function Footer() {
-  const year = new Date().getFullYear();
+export const Footer = () => {
   return (
     <footer className={`sticky left-0 right-0 ${SITE_PADDING}`}>
       <div className="flex flex-col justify-center items-center bg-gray-400">
@@ -17,8 +16,8 @@ export default function Footer() {
         </h2>
         <h6>Follow Us On Social Media</h6>
         <LanguageSelector />
-        <p>© {year} Baxi Mama</p>
+        <p>© {new Date().getFullYear()} Baxi Mama</p>
       </div>
     </footer>
   );
-}
+};

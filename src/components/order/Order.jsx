@@ -1,9 +1,9 @@
-import { Card } from "../core";
+import { Card, CardTitle } from "../core";
 
 export const Order = () => {
   return (
-    <Card>
-      <h1>Order</h1>
+    <Card className="bg-white w-full">
+      <CardTitle>Order</CardTitle>
       <p>
         Tempor exercitation voluptate minim enim laborum. Et officia fugiat
         veniam nulla excepteur excepteur sint voluptate voluptate deserunt ipsum

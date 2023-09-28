@@ -1,8 +1,12 @@
-import { node } from "prop-types";
+import { bool, node, string } from "prop-types";
 
-export const Card = ({ children }) => {
+export const Card = ({ children, className, noPadding }) => {
   return (
-    <div className="max-w-xs overflow-hidden rounded-lg shadow-lg">
+    <div
+      className={`overflow-hidden rounded-lg shadow-lg w-full ${
+        noPadding ? "" : "p-3"
+      } ${className}`}
+    >
       {children}
     </div>
   );
@@ -10,4 +14,6 @@ export const Card = ({ children }) => {
 
 Card.propTypes = {
   children: node.isRequired,
+  className: string,
+  noPadding: bool,
 };

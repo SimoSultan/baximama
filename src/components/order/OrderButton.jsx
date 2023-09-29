@@ -1,9 +1,13 @@
-import { string } from "prop-types";
+import { func, string } from "prop-types";
 import { Button } from "../core";
 
-export const OrderButton = ({ className }) => {
+export const OrderButton = ({ className = "", onClick = () => null }) => {
   return (
-    <Button variant="primary" className={className}>
+    <Button
+      variant="primary"
+      className={`flex justify-center items-center mx-auto ${className}`}
+      onClick={onClick}
+    >
       ORDER
     </Button>
   );
@@ -11,4 +15,5 @@ export const OrderButton = ({ className }) => {
 
 OrderButton.propTypes = {
   className: string,
+  onClick: func,
 };

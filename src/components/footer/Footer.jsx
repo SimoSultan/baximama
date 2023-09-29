@@ -1,10 +1,13 @@
 import LanguageSelector from "./LanguageSelector";
 import logo from "../../assets/logo.png";
-import { MAX_DESKTOP_WIDTH } from "../../utils/contants";
+import { MAX_DESKTOP_WIDTH, SECTIONS, Z_INDEXES } from "../../utils/contants";
 
 export const Footer = () => {
   return (
-    <footer className={`sticky left-0 right-0 p-5 bg-gray-400`}>
+    <footer
+      id={SECTIONS.CONTACT}
+      className={`sticky left-0 right-0 p-5 bg-gray-400 ${Z_INDEXES.FOOTER}`}
+    >
       <div
         className={`flex flex-col justify-center items-center ${MAX_DESKTOP_WIDTH}`}
       >

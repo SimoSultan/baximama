@@ -1,4 +1,4 @@
-import { Card } from "../core";
+import { Button, Card } from "../core";
 
 export const ProductItem = () => {
   return (
@@ -12,13 +12,12 @@ export const ProductItem = () => {
         alt="Flower and sky"
       />
       <div className="px-6 py-4">
-        <h4 className="mb-3 text-xl font-semibold tracking-tight text-gray-800">
+        <h4 className="text-xl font-semibold tracking-tight text-gray-800">
           This is the title
         </h4>
-        <p className="leading-normal text-gray-700">
-          Lorem ipsum dolor, sit amet cons ectetur adipis icing elit. Praesen
-          tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.
-        </p>
+        <Button variant="primary" className="mt-3">
+          MORE INFO
+        </Button>
       </div>
     </Card>
   );

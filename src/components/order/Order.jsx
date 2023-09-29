@@ -1,10 +1,11 @@
-import { Card, CardTitle } from "../core";
+import { Card, CardTitle, Text } from "../core";
+import { OrderButton } from "./OrderButton";
 
 export const Order = () => {
   return (
     <Card className="bg-white w-full">
       <CardTitle>Order</CardTitle>
-      <p>
+      <Text>
         Tempor exercitation voluptate minim enim laborum. Et officia fugiat
         veniam nulla excepteur excepteur sint voluptate voluptate deserunt ipsum
         non. Elit ipsum sunt dolor non fugiat elit elit aliquip aute do magna
@@ -12,7 +13,8 @@ export const Order = () => {
         labore. Deserunt incididunt dolore incididunt aute sint culpa est
         excepteur nostrud. Ea consequat nulla ipsum consectetur. Magna
         consectetur labore deserunt nostrud non officia enim culpa minim.
-      </p>
+      </Text>
+      <OrderButton className="flex justify-center items-center mx-auto" />
     </Card>
   );
 };

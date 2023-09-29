@@ -5,12 +5,17 @@ import { Order, OrderButton } from "../order";
 import { ProductList } from "../products/ProductList";
 
 export const ContentContainer = () => {
+  const scrollToOrderSection = () => {
+    const orderSection = document.getElementById("order-card");
+    orderSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <main className="w-full bg-orange-400">
       <div className={`${SITE_GAP} ${MAX_DESKTOP_WIDTH}`}>
         <About />
         <Space height={5} />
-        <OrderButton className="flex justify-center items-center mx-auto" />
+        <OrderButton onClick={scrollToOrderSection} />
         <Space height={5} />
         <ProductList />
         <Space height={5} />

@@ -1,9 +1,10 @@
+import { openLine } from "../../utils/contants";
 import { Card, CardTitle, Text } from "../core";
 import { OrderButton } from "./OrderButton";
 
 export const Order = () => {
   return (
-    <Card className="bg-white w-full">
+    <Card className="bg-white w-full" id="order-card">
       <CardTitle>Order</CardTitle>
       <Text>
         Tempor exercitation voluptate minim enim laborum. Et officia fugiat
@@ -14,7 +15,7 @@ export const Order = () => {
         excepteur nostrud. Ea consequat nulla ipsum consectetur. Magna
         consectetur labore deserunt nostrud non officia enim culpa minim.
       </Text>
-      <OrderButton className="flex justify-center items-center mx-auto" />
+      <OrderButton onClick={openLine} />
     </Card>
   );
 };

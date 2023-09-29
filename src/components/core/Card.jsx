@@ -1,9 +1,15 @@
 import { bool, node, string } from "prop-types";
 
-export const Card = ({ children, className, noPadding }) => {
+export const Card = ({
+  children,
+  className = "",
+  noPadding = false,
+  id = "",
+}) => {
   return (
     <div
-      className={`overflow-hidden rounded-lg shadow-lg w-full ${
+      id={id}
+      className={`overflow-hidden rounded-lg shadow-lg w-full min-h-[275px] ${
         noPadding ? "" : "p-3"
       } ${className}`}
     >
@@ -16,4 +22,5 @@ Card.propTypes = {
   children: node.isRequired,
   className: string,
   noPadding: bool,
+  id: string,
 };

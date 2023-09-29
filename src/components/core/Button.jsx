@@ -1,4 +1,4 @@
-import { string, func } from "prop-types";
+import { string, func, node } from "prop-types";
 
 const BUTTON_VARIANTS = {
   PRIMARY:
@@ -8,10 +8,11 @@ const BUTTON_VARIANTS = {
 };
 
 export const Button = ({
-  label = "Button",
+  children,
   variant = "primary",
   onClick = () => null,
   value = "",
+  className = "",
 }) => {
   const classes = ((variant) => {
     switch (variant) {
@@ -31,15 +32,20 @@ export const Button = ({
   };
 
   return (
-    <button className={classes} onClick={handleClick} value={value}>
-      {label}
+    <button
+      className={`${classes} ${className}`}
+      onClick={handleClick}
+      value={value}
+    >
+      {children}
     </button>
   );
 };
 
 Button.propTypes = {
-  label: string.isRequired,
+  children: node.isRequired,
   variant: string,
   onClick: func,
   value: string,
+  className: string,
 };

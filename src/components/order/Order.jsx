@@ -1,10 +1,10 @@
-import { openLine } from "../../utils/contants";
+import { SECTIONS, openLine } from "../../utils/contants";
 import { Card, CardTitle, Text } from "../core";
 import { OrderButton } from "./OrderButton";
 
 export const Order = () => {
   return (
-    <Card className="bg-white w-full" id="order-card">
+    <Card id={SECTIONS.ORDER} className="bg-white w-full">
       <CardTitle>Order</CardTitle>
       <Text>
         Tempor exercitation voluptate minim enim laborum. Et officia fugiat

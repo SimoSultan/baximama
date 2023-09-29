@@ -1,8 +1,9 @@
+import { SECTIONS } from "../../utils/contants";
 import { Card, CardTitle, Text } from "../core";
 
 export const About = () => {
   return (
-    <Card className="bg-white">
+    <Card id={SECTIONS.ABOUT} className="bg-white">
       <CardTitle>About</CardTitle>
       <Text>
         Tempor exercitation voluptate minim enim laborum. Et officia fugiat

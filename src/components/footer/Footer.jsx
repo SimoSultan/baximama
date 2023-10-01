@@ -1,8 +1,10 @@
 import LanguageSelector from "./LanguageSelector";
 import logo from "../../assets/logo.png";
 import { MAX_DESKTOP_WIDTH, SECTIONS, Z_INDEXES } from "../../utils/contants";
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer
       id={SECTIONS.CONTACT}
@@ -17,9 +19,9 @@ export const Footer = () => {
           alt="Baxi Mama logo"
         />
         <h2 className="text-3xl font-bold text-center">
-          Enjoy Some Delicious Cheese Bread By Ordering With Us On Line
+          {t("footer.tagline")}
         </h2>
-        <h6>Follow Us On Social Media</h6>
+        <h6>{t("footer.follow-us")}</h6>
         <LanguageSelector />
         <p>© {new Date().getFullYear()} Baxi Mama</p>
       </div>

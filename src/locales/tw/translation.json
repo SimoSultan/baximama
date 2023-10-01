@@ -1,3 +1,27 @@
 {
-  "title": "巴西妈妈"
+  "title": "巴西媽媽",
+  "about": {
+    "heading": "巴西媽媽是誰？",
+    "description": "首先，我要跟大家講一個故事。巴西阿姨（Baxi Ayi）出生於台灣，約50年前隨家人移民到巴西。疫情後，她決定搬回台灣，也帶一些美味的巴西口味給大家嚐嚐。"
+  },
+  "products": {
+    "button": "更多資訊",
+    "cheese-bread": {
+      "heading": "起司麵包",
+      "description": "巴西起司麵包（Pão de Queijo）是一種無麩質麵包，由木薯粉/木薯粉製成。它適合搭配咖啡☕或茶🍵。它們營養豐富、美味可口，而且不添加任何防腐劑。"
+    },
+    "condensed-milk-balls": {
+      "heading": "煉乳球",
+      "description": "由煉乳製成的美味巴西甜點。"
+    }
+  },
+  "order": {
+    "heading": "命令",
+    "description": "在這裡訂購您的產品。",
+    "button": "命令"
+  },
+  "footer": {
+    "tagline": "線上訂購，享用美味的起司麵包",
+    "follow-us": "在社群媒體上關注我們"
+  }
 }

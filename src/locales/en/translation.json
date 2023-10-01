@@ -1,3 +1,27 @@
 {
-  "title": "Brazilian Mum"
+  "title": "Brazilian Mum",
+  "about": {
+    "heading": "Who is the Brazilian Mum?",
+    "description": "First, let me tell you a story. 巴西阿姨 (Baxi Ayi) was born in Taiwan and immigrated to Brazil with her family around 50 years ago. After the pandemic, she decided to move back to Taiwan, but also, bring some of the delicious Brazilian taste for everyone to try."
+  },
+  "products": {
+    "button": "MORE INFO",
+    "cheese-bread": {
+      "heading": "Cheese Bread",
+      "description": "Brazilian Cheese Bread (Pão de Queijo) is a gluten-free bread, made with tapioca/cassava flour. It goes well with your coffee ☕ or tea 🍵. They're nutritious, delicious and there are no added preservatives."
+    },
+    "condensed-milk-balls": {
+      "heading": "Condensed Milk Balls",
+      "description": "A delicious brazilian sweet treat made from condensded milk."
+    }
+  },
+  "order": {
+    "heading": "Order",
+    "description": "Order your products here.",
+    "button": "ORDER"
+  },
+  "footer": {
+    "tagline": "Enjoy Some Delicious Cheese Bread By Ordering With Us On Line",
+    "follow-us": "Follow Us On Social Media"
+  }
 }

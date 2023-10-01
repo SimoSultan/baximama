@@ -1,3 +1,27 @@
 {
-  "title": "Mãe Brasileira"
+  "title": "Mãe Brasileira",
+  "about": {
+    "heading": "Quem é a mãe brasileira?",
+    "description": "Brazilian Mum é um blog sobre maternidade, paternidade e vida em geral. Foi escrito por uma mãe brasileira que mora no Reino Unido."
+  },
+  "products": {
+    "button": "MAIS INFORMAÇÕES",
+    "cheese-bread": {
+      "heading": "Pão de Queijo",
+      "description": "O Pão de Queijo é um pão sem glúten, feito com farinha de tapioca/mandioca. Acompanha bem o seu café ☕ ou chá 🍵. São nutritivos, deliciosos e não contêm conservantes adicionados."
+    },
+    "condensed-milk-balls": {
+      "heading": "Brigadeiro",
+      "description": "Um delicioso doce brasileiro feito com leite condensado."
+    }
+  },
+  "order": {
+    "heading": "Ordem",
+    "description": "Encomende aqui os seus produtos.",
+    "button": "ORDEM"
+  },
+  "footer": {
+    "tagline": "Desfrute de um delicioso pão de queijo encomendando conosco on Line",
+    "follow-us": "Siga-nos nas redes sociais"
+  }
 }

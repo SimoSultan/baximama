@@ -25,11 +25,15 @@ export const captialise = (string) => {
   return string.charAt(0).toUpperCase() + string.slice(1);
 };
 
-const scrollIntoViewWithOffset = (selector, offset) => {
-  const section = document.getElementById(selector);
-  if (section) {
-    section.scrollIntoView({
-      behavior: "smooth",
-    });
-  }
-};
+export const PRODUCTS = [
+  {
+    id: "cheese-bread",
+    image:
+      "https://essareceitafunciona.com.br/wp-content/uploads/2022/07/Pao-de-queijo-Essa-Receita-Funciona-9.jpg",
+  },
+  {
+    id: "condensed-milk-balls",
+    image:
+      "https://www.allrecipes.com/thmb/VSov5pj21Z0AVEMyajtaTRndpbI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/JF_24052_Brigadeiro_Shot_2x1_12851-9de74acd91a6404aa7cb2c3e3cff884d.jpg",
+  },
+];

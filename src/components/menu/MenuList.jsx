@@ -19,7 +19,7 @@ export const MenuList = ({ onClose }) => {
   return (
     <>
       <div
-        className="fixed inset-0 bg-black opacity-50 flex-1"
+        className={`fixed inset-0 bg-black opacity-50 h-screen ${Z_INDEXES.BACKDROP}`}
         onClick={onClose}
       />
       <nav

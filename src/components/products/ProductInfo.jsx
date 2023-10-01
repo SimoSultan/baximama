@@ -1,16 +1,20 @@
 import { func, string } from "prop-types";
 import { Card, Text } from "../core";
 import { OrderButton } from "../order";
-import { openLine } from "../../utils/contants";
+import { LINE_URL, openLink } from "../../utils/contants";
 import { useTranslation } from "react-i18next";
-
+import { UilMultiply } from "@iconscout/react-unicons";
 export const ProductInfo = ({ id = "id", onClose = () => null }) => {
   const { t } = useTranslation();
+  const openLine = () => openLink(LINE_URL);
 
   return (
     <Card className="bg-white">
-      <button onClick={onClose} className="absolute right-5 top-3">
-        Close
+      <button
+        onClick={onClose}
+        className="absolute right-2 top-2 w-10 h-10 flex justify-center items-center"
+      >
+        <UilMultiply />
       </button>
       <h4 className="mb-3 text-xl font-semibold tracking-tight text-gray-800">
         {t(`products.${id}.heading`)}

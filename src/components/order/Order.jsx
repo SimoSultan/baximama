@@ -1,10 +1,12 @@
 import { useTranslation } from "react-i18next";
-import { SECTIONS, openLine } from "../../utils/contants";
+import { LINE_URL, SECTIONS, openLink } from "../../utils/contants";
 import { Card, CardTitle, Text } from "../core";
 import { OrderButton } from "./OrderButton";
 
 export const Order = () => {
   const { t } = useTranslation();
+  const openLine = () => openLink(LINE_URL);
+
   return (
     <Card id={SECTIONS.ORDER} className="bg-white w-full">
       <CardTitle>{t("order.heading")}</CardTitle>

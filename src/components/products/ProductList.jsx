@@ -1,17 +1,15 @@
 import { Fragment } from "react";
 import { Space } from "../core";
 import { ProductItem } from "./ProductItem";
-import { SECTIONS } from "../../utils/contants";
-
-const products = [1, 2];
+import { PRODUCTS, SECTIONS } from "../../utils/contants";
 
 export const ProductList = () => {
   return (
     <div id={SECTIONS.PRODUCTS}>
-      {products.map((id, index) => (
-        <Fragment key={`product-list-item-${id}`}>
-          <ProductItem />
-          {index !== products.length - 1 ? <Space height={5} /> : null}
+      {PRODUCTS.map((product, index) => (
+        <Fragment key={`product-list-item-${product.id}`}>
+          <ProductItem {...product} />
+          {index !== PRODUCTS.length - 1 ? <Space height={5} /> : null}
         </Fragment>
       ))}
     </div>

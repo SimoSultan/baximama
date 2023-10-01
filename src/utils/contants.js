@@ -2,10 +2,14 @@ export const SITE_GAP = "p-5";
 export const CARD_GAP = "mt-5";
 export const MAX_DESKTOP_WIDTH = "max-w-lg mx-auto";
 
+export const INSAGRAM_URL = "https://www.instagram.com/baxi_ayi/";
+export const LINE_URL = "https://line.me/R/ti/p/%40baximama";
+
 export const Z_INDEXES = {
   HEADER: "z-10",
   CONTENT: "z-0", // default value
   FOOTER: "z-0",
+  BACKDROP: "z-10",
   MODAL: "z-20",
   MENU: "z-30",
 };
@@ -17,8 +21,8 @@ export const SECTIONS = {
   CONTACT: "contact",
 };
 
-export const openLine = () => {
-  window.open("https://linecorp.com/en/", "_blank");
+export const openLink = (url) => {
+  window.open(url, "_blank");
 };
 
 export const captialise = (string) => {

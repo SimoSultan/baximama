@@ -1,28 +1,44 @@
 import { useState } from "react";
 import i18n from "../../i18n";
-import { Button } from "../core";
+import AuFlagIcon from "../../assets/australian-flag.png";
+import BrFlagIcon from "../../assets/brazilian-flag.png";
+import TwFlagIcon from "../../assets/taiwanese-flag.png";
 
 const LanguageSelector = () => {
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language); // i18n.language contains the language assigned to lng in i18n.js file.
 
   const chooseLanguage = (e) => {
-    console.log(e.target.value);
-    i18n.changeLanguage(e.target.value ?? "en"); // i18n.changeLanguage() is used to change the language assigned to lng in i18n.js file.
-    setSelectedLanguage(e.target.value);
-    localStorage.setItem("lang", e.target.value);
+    const val = e.target.parentNode.getAttribute("value");
+    i18n.changeLanguage(val ?? "en"); // i18n.changeLanguage() is used to change the language assigned to lng in i18n.js file.
+    setSelectedLanguage(val);
+    localStorage.setItem("lang", val);
   };
 
+  const imageClasses = "w-10 h-10 rounded-full";
+
   return (
-    <div className="w-full flex justify-around my-2">
-      <Button variant="primary" value="en" onClick={chooseLanguage}>
-        English
-      </Button>
-      <Button variant="primary" value="br" onClick={chooseLanguage}>
-        Brasileiro
-      </Button>
-      <Button variant="primary" value="tw" onClick={chooseLanguage}>
-        Zhōngwén
-      </Button>
+    <div className="w-full flex justify-center gap-5 my-2">
+      <button value="en" onClick={chooseLanguage}>
+        <img
+          src={AuFlagIcon}
+          alt="Australian Language Selectector"
+          className={imageClasses}
+        />
+      </button>
+      <button value="br" onClick={chooseLanguage}>
+        <img
+          src={BrFlagIcon}
+          alt="Brazilian Language Selectector"
+          className={imageClasses}
+        />
+      </button>
+      <button value="tw" onClick={chooseLanguage}>
+        <img
+          src={TwFlagIcon}
+          alt="Taiwanese Language Selectector"
+          className={imageClasses}
+        />
+      </button>
     </div>
   );
 };

@@ -22,6 +22,14 @@
   },
   "footer": {
     "tagline": "線上訂購，享用美味的起司麵包",
+    "language": "更改語言",
     "follow-us": "在社群媒體上關注我們"
+  },
+  "menu": {
+    "home": "家",
+    "about": "關於",
+    "products": "產品",
+    "order": "命令",
+    "contact": "聯繫我們"
   }
 }

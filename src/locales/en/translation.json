@@ -22,6 +22,14 @@
   },
   "footer": {
     "tagline": "Enjoy Some Delicious Cheese Bread By Ordering With Us On Line",
+    "language": "Change Languages",
     "follow-us": "Follow Us On Social Media"
+  },
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "order": "Order",
+    "contact": "Contact"
   }
 }

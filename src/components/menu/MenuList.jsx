@@ -1,6 +1,7 @@
 import { func } from "prop-types";
 import { MenuItem } from "./MenuItem";
 import { SECTIONS, Z_INDEXES } from "../../utils/contants";
+import LanguageSelector from "../footer/LanguageSelector";
 
 export const MenuList = ({ onClose }) => {
   const handleMenuItemClick = (heading) => {
@@ -34,6 +35,9 @@ export const MenuList = ({ onClose }) => {
             />
           );
         })}
+        <li className="flex justify-center items-center h-14 w-full bg-white text-black">
+          <LanguageSelector />
+        </li>
       </nav>
     </>
   );

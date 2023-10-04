@@ -8,7 +8,7 @@ export const Order = () => {
   const openLine = () => openLink(LINE_URL);
 
   return (
-    <Card id={SECTIONS.ORDER} className="bg-white w-full">
+    <Card id={SECTIONS.ORDER} className="w-full bg-white">
       <CardTitle>{t("order.heading")}</CardTitle>
       <Text>{t("order.description")}</Text>
       <OrderButton onClick={openLine} className="mt-3" />

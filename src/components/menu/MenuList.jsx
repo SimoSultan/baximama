@@ -20,11 +20,11 @@ export const MenuList = ({ onClose }) => {
   return (
     <>
       <div
-        className={`fixed inset-0 bg-black opacity-50 h-screen ${Z_INDEXES.BACKDROP}`}
+        className={`fixed inset-0 h-screen bg-black opacity-50 ${Z_INDEXES.BACKDROP}`}
         onClick={onClose}
       />
       <nav
-        className={`fixed bottom-0 w-full flex flex-col items-center justify-center ${Z_INDEXES.MENU}`}
+        className={`fixed bottom-0 flex w-full flex-col items-center justify-center ${Z_INDEXES.MENU}`}
       >
         {Object.values(SECTIONS).map((heading, index) => {
           return (
@@ -35,7 +35,7 @@ export const MenuList = ({ onClose }) => {
             />
           );
         })}
-        <li className="flex justify-center items-center h-14 w-full bg-white text-black">
+        <li className="flex h-14 w-full items-center justify-center bg-white text-black">
           <LanguageSelector />
         </li>
       </nav>

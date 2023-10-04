@@ -21,27 +21,27 @@ export const Footer = () => {
   return (
     <footer
       id={SECTIONS.CONTACT}
-      className={`sticky left-0 right-0 p-5 bg-gray-400 ${Z_INDEXES.FOOTER}`}
+      className={`sticky left-0 right-0 bg-gray-400 p-5 ${Z_INDEXES.FOOTER}`}
     >
       <div
-        className={`flex flex-col justify-center items-center ${MAX_DESKTOP_WIDTH}`}
+        className={`flex flex-col items-center justify-center ${MAX_DESKTOP_WIDTH}`}
       >
         <img
           src={logo}
-          className="flex justify-center items-start w-20 mb-5"
+          className="mb-5 flex w-20 items-start justify-center"
           alt="Baxi Mama logo"
         />
-        <h2 className="text-3xl font-bold text-center">
+        <h2 className="text-center text-3xl font-bold">
           {t("footer.tagline")}
         </h2>
         <img
           src={QrCode}
           alt="Baxi Mama Line QR code"
-          className="w-36 h-36 my-5"
+          className="my-5 h-36 w-36"
           onClick={openLine}
         />
         <h6 className="mt-5">{t("footer.follow-us")}</h6>
-        <div className="flex gap-3 my-2">
+        <div className="my-2 flex gap-3">
           <button onClick={openLine}>
             <UilLine size="40" />
           </button>

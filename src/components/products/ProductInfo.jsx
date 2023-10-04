@@ -12,7 +12,7 @@ export const ProductInfo = ({ id = "id", onClose = () => null }) => {
     <Card className="bg-white">
       <button
         onClick={onClose}
-        className="absolute right-2 top-2 w-10 h-10 flex justify-center items-center"
+        className="absolute right-2 top-2 flex h-10 w-10 items-center justify-center"
       >
         <UilMultiply />
       </button>

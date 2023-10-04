@@ -17,7 +17,7 @@ const LanguageSelector = () => {
   const imageClasses = "w-10 h-10 rounded-full";
 
   return (
-    <div className="w-full flex justify-center gap-5 my-2">
+    <div className="my-2 flex w-full justify-center gap-5">
       <button value="en" onClick={chooseLanguage}>
         <img
           src={AuFlagIcon}

@@ -9,7 +9,7 @@ export const Card = ({
   return (
     <div
       id={id}
-      className={`overflow-hidden rounded-lg shadow-lg w-full min-h-[275px] ${
+      className={`min-h-[275px] w-full overflow-hidden rounded-lg shadow-lg ${
         noPadding ? "" : "p-3"
       } ${className}`}
     >

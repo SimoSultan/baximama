@@ -7,7 +7,7 @@ export const OrderButton = ({ className = "", onClick = () => null }) => {
   return (
     <Button
       variant="primary"
-      className={`flex justify-center items-center mx-auto ${className}`}
+      className={`mx-auto flex items-center justify-center ${className}`}
       onClick={onClick}
     >
       {t("order.button")}

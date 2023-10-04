@@ -20,10 +20,10 @@ export const ProductItem = ({ id, image }) => {
     <ReactCardFlip isFlipped={isFlipped}>
       <Card
         noPadding
-        className="w-full overflow-hidden rounded-lg shadow-lg bg-white"
+        className="w-full overflow-hidden rounded-lg bg-white shadow-lg"
       >
         <img
-          className="object-cover w-full h-40"
+          className="h-40 w-full object-cover"
           src={image}
           alt={headingKey}
         />

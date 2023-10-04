@@ -7,7 +7,7 @@ export const MenuItem = ({ heading = "", onClick = () => null }) => {
 
   return (
     <li
-      className="flex justify-center items-center h-14 w-full bg-white text-black"
+      className="flex h-14 w-full items-center justify-center bg-white text-black "
       onClick={onClick}
     >
       {captialise(t(`menu.${heading}`))}
